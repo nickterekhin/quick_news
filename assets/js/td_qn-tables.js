@@ -20,7 +20,7 @@
                 "processing":false,
                 "serverSide":true,
                 "ajax":{
-                    "url":'wp-admin/admin-ajax.php',"type":"POST",
+                    "url":url,"type":"POST",
                     "data":{
                         "action": 'get_quick_news_data'
                     },
