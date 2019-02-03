@@ -62,7 +62,7 @@
                 }*/
 
             },options);
-
+console.log(opt_table);
         this.table_obj  = $(id).dataTable(opt_table);
         return this.table_obj.api();
 
