@@ -62,38 +62,12 @@
                 }*/
 
             },options);
-console.log(opt_table);
         this.table_obj  = $(id).dataTable(opt_table);
         return this.table_obj.api();
 
 
     };
-    function setFilters(tableApi,filters,ajax)
-    {
-        ajax = ajax || false;
-        showCustomFilters($(tableApi.table().node()).attr('id'), $(tableApi.table().node()).attr('id')+"-filters");
-        for(var i=0; i<filters.length;i++)
-        {
-            if (ajax)
-            {
-                switch (filters[i].filterType) {
-                    case 'dateRange':
-                        dateRangeFilterAX(tableApi, filters[i].container, filters[i].column);
-                        break;
-                    case 'select_sp':
-                        selectFilter(tableApi, filters[i].defaultSelect, filters[i].defaultSelectedValue, filters[i].container, filters[i].column, filters[i].filterName, filters[i].cssClass, filters[i].style,filters[i].externalTable);
-                        break;
-                }
-            } else
-            {
-                switch (filters[i].filterType) {
-                    case 'dateRange':
-                        dateRangeFilter(tableApi, filters[i].container, filters[i].column);
-                        break;
-                }
-            }
-        }
-    }
+
      obj.initFilter = function(options)
      {
         let opt_filter = $.extend({

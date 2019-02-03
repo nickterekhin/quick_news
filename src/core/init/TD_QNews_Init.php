@@ -47,16 +47,16 @@ class TD_QNews_Init
     function init_front_resources()
     {
 
-        wp_enqueue_style( 'td_qn-tables', TD_QNEWS_PLUGIN_URL. 'assets/css/libs/datatables.min.css' );
-         wp_enqueue_style( 'td_qn-icons', TD_QNEWS_PLUGIN_URL. 'assets/css/libs/all.min.css' );
-        wp_enqueue_style( 'td_qn-styles', TD_QNEWS_PLUGIN_URL. 'assets/css/qn_styles.css' );
+        wp_enqueue_style( 'td_qn-tables', TD_QNEWS_PLUGIN_URL. '/assets/css/libs/datatables.min.css' );
+         wp_enqueue_style( 'td_qn-icons', TD_QNEWS_PLUGIN_URL. '/assets/css/libs/all.min.css' );
+        wp_enqueue_style( 'td_qn-styles', TD_QNEWS_PLUGIN_URL. '/assets/css/qn_styles.css' );
 
-       //wp_enqueue_script( 'td_qn-jquery', TD_QNEWS_PLUGIN_URL. 'assets/js/jquery-3.3.1.min.js' );
-        wp_enqueue_script( 'td_qn-jquery-ui', TD_QNEWS_PLUGIN_URL. 'assets/js/ui/jquery-ui.min.js' );
-        wp_enqueue_script( 'td_qn-notify', TD_QNEWS_PLUGIN_URL. 'assets/js/notify.js' );
-        wp_enqueue_script( 'td_qn-tables-js', TD_QNEWS_PLUGIN_URL. 'assets/js/datatables.js' );
-        wp_enqueue_script( 'td_qn-custom-tables-js', TD_QNEWS_PLUGIN_URL. 'assets/js/td_qn-tables.js' );
-        wp_enqueue_script( 'td_qn-custom', TD_QNEWS_PLUGIN_URL. 'assets/js/td-qn-app.js' );
+       //wp_enqueue_script( 'td_qn-jquery', TD_QNEWS_PLUGIN_URL. '/assets/js/jquery-3.3.1.min.js' );
+        wp_enqueue_script( 'td_qn-jquery-ui', TD_QNEWS_PLUGIN_URL. '/assets/js/ui/jquery-ui.min.js' );
+        wp_enqueue_script( 'td_qn-notify', TD_QNEWS_PLUGIN_URL. '/assets/js/notify.js' );
+        wp_enqueue_script( 'td_qn-tables-js', TD_QNEWS_PLUGIN_URL. '/assets/js/datatables.js' );
+        wp_enqueue_script( 'td_qn-custom-tables-js', TD_QNEWS_PLUGIN_URL. '/assets/js/td_qn-tables.js' );
+        wp_enqueue_script( 'td_qn-custom', TD_QNEWS_PLUGIN_URL. '/assets/js/td-qn-app.js' );
 
 
     }
