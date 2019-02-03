@@ -9,7 +9,7 @@
             managedClisk('td_qn-close');
 
             $(".td_qn-show-news-feed").notify("Лента Новостей",{position:'left',style:'tdqn'});
-            td_qn_tables.init_table("#td_qn-table",'<?php echo admin_url('admin-ajax.php'); ?>',getColumns());
+            td_qn_tables.init_table("#td_qn-table",'/wp-admin/admin-ajax.php',getColumns());
             td_qn_tables.initFilter({container:"#td_qn-filter-by-category",column:3});
             td_qn_tables.initFilterDateRange({start_date:"#td_qn-filter-start-date",end_date:"#td_qn-filter-end-date",column:2});
         });
