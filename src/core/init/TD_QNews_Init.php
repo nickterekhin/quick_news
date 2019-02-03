@@ -28,7 +28,7 @@ class TD_QNews_Init
     {
 
         add_action('wp_ajax_nopriv_get_quick_news_data',array($this->_shortcode,'get_data'));
-        add_action('wp_ajax_get_quick_news_data',array($this->_shortcode,'get_data'));
+        //add_action('wp_ajax_get_quick_news_data',array($this->_shortcode,'get_data'));
        /* if(is_admin())
         {
             add_action('admin_menu', array($this,'init_admin_menu'));
