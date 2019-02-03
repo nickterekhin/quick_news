@@ -1,5 +1,4 @@
-<?php
-?>
+
 <script type="text/javascript">
     (function($){
         $.notify.addStyle('tdqn',{
@@ -61,7 +60,7 @@
 
     })(jQuery);
 </script>
-<a class="on" id="td_qn-cntrl" href="#" data-child="td_qn-overlay">
+<a class="on" id="td_qn-cntrl" href="javascript:void(0)" data-child="td_qn-overlay">
     <span class="td_qn-show-news-feed">
         <i class="fas fa-anchor"></i>
     </span>
@@ -69,7 +68,7 @@
 
 <div class="td_qn-overlay" id="td_qn-overlay">
     <div class="td_qn-data-container">
-        <a class="td_qn-close" id="td_qn-close" data-child="td_qn-overlay">
+        <a class="td_qn-close" id="td_qn-close" data-child="td_qn-overlay" href="javascript:void(0)">
             <i class="fas fa-times-square"></i>
         </a>
         <div class="td_qn-data">
@@ -95,7 +94,7 @@
                     <li>
                         <input type="datetime" class="datepicker" readonly id="td_qn-filter-start-date" placeholder="от" name="td_qn-filter-start-date" value="" style="width:60px;    border: 1px solid #d7d7d7;     border-radius: 2px;">
                         <input type="datetime" class="datepicker" readonly id="td_qn-filter-end-date" placeholder="до" name="td_qn-filter-end-date" value="" style="width:60px;    border: 1px solid #d7d7d7; border-radius: 2px;">
-                        <a href="#" id="td_qn-reset-date-range" class="td_qn-reset-date-range">
+                        <a href="javascript:void(0)" id="td_qn-reset-date-range" class="td_qn-reset-date-range">
                             <i class="fas fa-times"></i>
                         </a>
                     </li>
