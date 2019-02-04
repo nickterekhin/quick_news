@@ -27,7 +27,7 @@ class TD_QNews_Init
     function init()
     {
         add_action('wp_enqueue_scripts',array($this,'init_front_resources'),12);
-        add_action('qode_after_wrapper_inner',array($this,'render_short_code'));
+        //add_action('qode_after_wrapper_inner',array($this,'render_short_code'));
 
 
 
