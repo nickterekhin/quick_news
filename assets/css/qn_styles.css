@@ -10,13 +10,13 @@
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
   right: 25px;
-  visibility: hidden;
+  display: none;
   -webkit-backface-visibility: hidden; }
   #td_qn-cntrl.off {
     opacity: 0; }
   #td_qn-cntrl.on {
     opacity: 1;
-    visibility: visible;
+    display: block;
     right: 25px; }
   #td_qn-cntrl .td_qn-show-news-feed {
     position: relative;

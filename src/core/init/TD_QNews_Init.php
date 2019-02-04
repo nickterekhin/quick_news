@@ -29,11 +29,13 @@ class TD_QNews_Init
         add_action('wp_enqueue_scripts',array($this,'init_front_resources'),12);
         add_action('qode_after_wrapper_inner',array($this,'render_short_code'));
 
-        if(wp_doing_ajax()) {
-            add_action('wp_ajax_nopriv_get_quick_news_data',array($this->_shortcode,'get_data'));
-            if(is_admin())
-                add_action('wp_ajax_get_quick_news_data',array($this->_shortcode,'get_data'));
-        }
+
+
+            add_action('wp_ajax_get_quick_news_data', array($this->_shortcode, 'get_data'));
+
+            add_action('wp_ajax_nopriv_get_quick_news_data', array($this->_shortcode, 'get_data'));
+
+
         //add_action('wp_ajax_nopriv_get_quick_news_data',array($this->_shortcode,'get_data'));
         //add_action('wp_ajax_get_quick_news_data',array($this->_shortcode,'get_data'));
        /* if(is_admin())
