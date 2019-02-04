@@ -20,7 +20,7 @@
             arrColumns.push({ "data": "ID", "targets": index++,'visible':false });
             arrColumns.push({ "data": "post_title", "targets": index++,"orderable":false, "render": function (source, type, row, meta) {
                 let html = '';
-                let dt = new Date(row.post_date),today = new Date();
+                let dt = new Date(row.post_date.replace(/\s/, 'T')),today = new Date();
                 let date_format = dt.format('MM-dd-yyyy HH:m');
 
                 if(dt === today)
