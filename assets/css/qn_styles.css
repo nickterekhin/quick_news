@@ -22,6 +22,8 @@
     position: relative;
     display: inline-block;
     vertical-align: middle; }
+    #td_qn-cntrl .td_qn-show-news-feed .fa-anchor {
+      color: #fff; }
   #td_qn-cntrl span {
     text-align: center; }
   #td_qn-cntrl > span {
