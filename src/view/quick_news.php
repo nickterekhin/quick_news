@@ -2,7 +2,7 @@
 <script type="text/javascript">
     (function($){
         $.notify.addStyle('tdqn',{
-            html:'<div><span><i class="fas fa-newspaper"></i><span data-notify-text></span></span></div>'
+            html:'<div><span><i class="fa fa-newspaper-o"></i><span data-notify-text></span></span></div>'
         });
         $(document).ready(function(){
             managedClisk('td_qn-cntrl');
@@ -27,7 +27,7 @@
                     date_format = dt.format('HH:m');
                 let is_featured =  '';
                 if(row.isFeatured==='yes')
-                    is_featured = '<span class="td_qn-featured-post" title="Главная Новость"><i class="fas fa-star"></i></span>';
+                    is_featured = '<span class="td_qn-featured-post" title="Главная Новость"><i class="fa fa-star"></i></span>';
 
                 html+='<ul class="td_qn-data-content">';
                     html+='<li>'+is_featured+'<span class="td_qn-post-title"><a href="'+row.link+'">'+row.post_title+'</a></span></li>';
@@ -38,7 +38,7 @@
                     });
 
 
-                    html+='<li><span class="td_qn-post-date">'+date_format+'</span><span class="td_qn-post-category">'+categories+'</span> <span class="td_qn-post-date"><i class="fas fa-eye"></i>'+row.Views+'</span></li>'
+                    html+='<li><span class="td_qn-post-date">'+date_format+'</span><span class="td_qn-post-category">'+categories+'</span> <span class="td_qn-post-date"><i class="fa fa-eye"></i>'+row.Views+'</span></li>'
                 html+='</ul>';
                 return html;
                 }
@@ -62,14 +62,14 @@
 </script>
 <a class="on" id="td_qn-cntrl" href="javascript:void(0)" data-child="td_qn-overlay">
     <span class="td_qn-show-news-feed">
-        <i class="fas fa-anchor"></i>
+        <i class="fa fa-anchor"></i>
     </span>
 </a>
 
 <div class="td_qn-overlay" id="td_qn-overlay">
     <div class="td_qn-data-container">
         <a class="td_qn-close" id="td_qn-close" data-child="td_qn-overlay" href="javascript:void(0)">
-            <i class="fas fa-times-square"></i>
+            <i class="fa fa-times"></i>
         </a>
         <div class="td_qn-data">
 
@@ -95,7 +95,7 @@
                         <input type="datetime" class="datepicker" readonly id="td_qn-filter-start-date" placeholder="от" name="td_qn-filter-start-date" value="" style="width:60px;    border: 1px solid #d7d7d7;     border-radius: 2px;">
                         <input type="datetime" class="datepicker" readonly id="td_qn-filter-end-date" placeholder="до" name="td_qn-filter-end-date" value="" style="width:60px;    border: 1px solid #d7d7d7; border-radius: 2px;">
                         <a href="javascript:void(0)" id="td_qn-reset-date-range" class="td_qn-reset-date-range">
-                            <i class="fas fa-times"></i>
+                            <i class="fas fa-times-circle"></i>
                         </a>
                     </li>
                 </ul>
