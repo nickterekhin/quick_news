@@ -1,9 +1,7 @@
 
 <script type="text/javascript">
     (function($){
-        $.notify.addStyle('tdqn',{
-            html:'<div><span><i class="fa fa-newspaper-o"></i><span data-notify-text></span></span></div>'
-        });
+        $.notify.addStyle('tdqn',{html:'<div><span><i class="fa fa-newspaper-o"></i><span data-notify-text></span></span></div>'});
         $(document).ready(function(){
             managedClisk('td_qn-cntrl');
             managedClisk('td_qn-close');
