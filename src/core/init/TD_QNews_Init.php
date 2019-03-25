@@ -55,7 +55,7 @@ class TD_QNews_Init
 
        //wp_enqueue_script( 'td_qn-jquery', TD_QNEWS_PLUGIN_URL. '/assets/js/jquery-3.3.1.min.js' );
         wp_enqueue_script( 'td_qn-jquery-ui', TD_QNEWS_PLUGIN_URL. 'assets/js/ui/jquery-ui.min.js' );
-        wp_enqueue_script( 'td_qn-notify', TD_QNEWS_PLUGIN_URL. 'assets/js/notify.js' );
+        wp_enqueue_script( 'td_qn-notify', TD_QNEWS_PLUGIN_URL. 'assets/js/notify.js',array('jquery'));
         wp_enqueue_script( 'td_qn-tables-js', TD_QNEWS_PLUGIN_URL. 'assets/js/datatables.js' );
         wp_enqueue_script( 'td_qn-custom-tables-js', TD_QNEWS_PLUGIN_URL. 'assets/js/td_qn-tables.js' );
         wp_enqueue_script( 'td_qn-custom', TD_QNEWS_PLUGIN_URL. 'assets/js/td-qn-app.js' );
