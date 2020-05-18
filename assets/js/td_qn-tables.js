@@ -20,7 +20,7 @@
                 "processing":false,
                 "serverSide":true,
                 "ajax":{
-                    "url":"http://www.seafarersjournal.com/wp-admin/admin-ajax.php","type":"POST",
+                    "url":"https://www.seafarersjournal.com/wp-admin/admin-ajax.php","type":"POST",
                     "data":{
                         "action": 'get_quick_news_data'
                     },
